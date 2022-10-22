@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/main.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
 </head>
 <body>
+  <div class="h-screen w-screen" id="hero">
+    
+  </div>
   <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
+
+  <!-- Header js -->
+
+  <script>
+    VANTA.NET({
+      el: "#hero",
+      mouseControls: true,
+      touchControls: false,
+      gyroControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xff3f3f,
+      backgroundColor: 0x90828,
+      maxDistance: 18.00
+    })
+    </script>
 </body>
 </html>
