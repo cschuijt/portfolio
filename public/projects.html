@@ -21,11 +21,61 @@
 <body>
   <div class="h-screen w-screen fixed bg-indigo-900" id="background">
   </div>
-  <div class="relative container w-screen mx-auto px-4 h-auto">
+  <div class="relative container w-max-screen mx-auto px-4 h-auto">
     <turbo-frame id="main-content">
       <div class="flex h-screen">
-        <div class="m-auto py-8 text-center font-spleen text-xl text-gray-100">
-          
+        <div class="m-auto py-8 text-center font-spleen text-xl text-gray-100 space-y-4 sm:px-4 md:px-8 lg:px-16 xl:px-32">
+          <h1 class="text-5xl text-white my-4">Projects</h1>
+          <p>
+            This is a list of things I have set up, code I have written and
+            projects I have worked on.
+          </p>
+          <h2 class="text-3xl text-white pt-4">Development projects</h2>
+          <p>
+            <span class="text-white text-2xl font-bold">Gem of True Sight</span>
+            is a Telegram bot that lets users sign in with Steam so that it can
+            fetch their Dota 2 match data, statistics and profile data and display it
+            in any chat on request. It is written in Rails and combines several
+            APIs, like the OpenDota API, the Steam API and of course the
+            Telegram bot API. It can cache and paginate API results, ask for
+            clarification when a user's input is unclear and respond to inline
+            queries to post into any chat, even when the bot itself is not
+            there. It also has a fully featured test suite and CI/CD pipeline.
+          </p>
+          <p>
+            It is currently live at <a href="https://dotagem.net" class="text-teal-300 hover:text-teal-500 underline">dotagem.net</a>
+            and on Telegram as <a href="https://t.me/dotagem_bot" class="text-teal-300 hover:text-teal-500 underline">@dotagem_bot</a>.
+            The source code is available on <a href="https://github.com/dotagem/dotagem" class="text-teal-300 hover:text-teal-500 underline">GitHub</a>.
+          </p>
+          <h2 class="text-3xl text-white pt-4">Services hosted</h2>
+          <p>
+            <span class="text-white text-2xl font-bold">Nightscout</span> is
+            an open-source glucose monitoring system "in the cloud". While
+            proprietary systems exist to upload data from flash glucose monitors
+            to the internet, these didn't have the functionality or portability
+            that I was looking for, so I took to hosting my own instead. In the
+            process, I learned how to set up MongoDB, which runs on my own
+            server.
+          </p>
+          <p>
+            Access to my Nightscout instance is password-controlled (as it
+            probably should be), but feel free to contact me if you would like
+            a demonstration.
+          </p>
+          <hr class="mx-24 md:mx-32 xl:mx-64">
+          <p>
+            Although <span class="text-white text-2xl font-bold">webdesign</span>
+            is not my strongest suit, I have been known to host and maintain
+            simple, static websites for friends and family.
+          </p>
+
+          <p class="pt-8">
+            More coming soon..?
+          </p>
+
+          <p class="pt-4">
+            <a href="index.html" class="text-teal-300 hover:text-teal-500 underline">Back</a>
+          </p>
         </div>
       </div>
     </turbo-frame>
