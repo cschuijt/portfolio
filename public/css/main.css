@@ -648,6 +648,10 @@ video {
   text-align: center;
 }
 
+.font-spleen {
+  font-family: spleen, ui-monospace;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -661,4 +665,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@font-face {
+  font-family: 'spleen';
+
+  src: url('../fonts/spleen-16x32-webfont.woff2') format('woff2'),
+       url('../fonts/spleen-16x32-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
 }
