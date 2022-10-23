@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'spleen';
+
+  src: url('../fonts/spleen-16x32-webfont.woff2') format('woff2'),
+       url('../fonts/spleen-16x32-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 /*
 ! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
 */
@@ -608,6 +619,10 @@ video {
   margin-right: auto;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -628,12 +643,6 @@ video {
   width: 100vw;
 }
 
-.w-max {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .bg-indigo-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(49 46 129 / var(--tw-bg-opacity));
@@ -652,6 +661,11 @@ video {
   font-family: spleen, ui-monospace;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -662,18 +676,44 @@ video {
   line-height: 2.5rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@font-face {
-  font-family: 'spleen';
+.text-teal-300 {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
 
-  src: url('../fonts/spleen-16x32-webfont.woff2') format('woff2'),
-       url('../fonts/spleen-16x32-webfont.woff') format('woff');
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
 
-  font-weight: normal;
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
 
-  font-style: normal;
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.hover\:text-teal-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
 }
