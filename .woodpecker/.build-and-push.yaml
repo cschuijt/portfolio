@@ -1,0 +1,21 @@
+steps:
+  build:
+    image: node
+    commands:
+      - npm install
+      - npx tailwindcss -i src/input.css -o public/css/main.css
+  publish:
+    privileged: true
+    backend_options:
+      kubernetes:
+        securityContext:
+          privileged: true
+    image: woodpeckerci/plugin-docker-buildx
+    secrets: [FORGE_OCI]
+    settings:
+      repo: forge.cschuijt.nl/casper-oci/portfolio
+      tag: latest
+      registry: forge.cschuijt.nl
+      username: casper
+      password:
+        from_secret: FORGE_OCI
